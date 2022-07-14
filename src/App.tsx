@@ -1,25 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter} from 'react-router-dom'
+import Home from './dashboard/Home';
+
+
+// const RouteData :any = [
+//   {
+//     component : <Buttons />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <GridC />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <Panels />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <SweetAlert />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <Notify />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <Icons />,
+//     path: '/buttons'
+//   },
+//   {
+//     component : <TypographyC />,
+//     path: '/buttons'
+//   }
+// ]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Home />
+    </BrowserRouter>
   );
 }
 
